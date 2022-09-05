@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box
+    }
+    :root{
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    }
+    .logo{
+    position: absolute;
+    width: 144.15px;
+    height: 159px;
+    left: 66px;
+    }
+    .list{
+    display: flex;
+    background-color: var(--primary-color);
+    }
+   body{
+    background-color: var(--secondary-color);
+       
+   }
+   .esquerda{
+    position: absolute;
+    width: 616px;
+    height: 1117px;
+    background-color: var(--primary-color);
+    z-index: -1;
+   }
+
+  
