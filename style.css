@@ -1,32 +1,137 @@
 *{
-    margin: 0;
     padding: 0;
-    box-sizing:border-box
-    }
-    :root{
-    --primary-color: #000000;
-    --secondary-color: #ffffff;
-    }
-    .logo{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: grid;
+    background-color: #EFEFEF;
+    grid-template-rows: 150px 1fr 150px;
+}
+.rectangle{
+    height: 100vh;
+    width: 30vw;
     position: absolute;
-    width: 144.15px;
-    height: 159px;
-    left: 66px;
-    }
-    .list{
+}
+header{
     display: flex;
-    background-color: var(--primary-color);
-    }
-   body{
-    background-color: var(--secondary-color);
-       
-   }
-   .esquerda{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo_nike{
     position: absolute;
-    width: 616px;
-    height: 1117px;
-    background-color: var(--primary-color);
-    z-index: -1;
-   }
+    margin-left: 4vw;
+    width: auto;
+    height: 159px;
+}
+.options{
+    display: flex;
+    justify-content: center;
+    padding-left: 42%;
+    align-items: center;
+    list-style: none;
+    gap: 75px;
+    font-size: 1.5rem;
+    font-family: 'Inter';
+    font-weight: bold;
+}
+.user{
+    background-color: #222222;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 1.4vw;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 8fr 8fr;
+}
+aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    position: absolute;
+    background-image: linear-gradient(#9C0610, #CF5C55);
+    height: 679px;
+    width: 679px;
+    border-radius: 50%;
+    box-shadow: 73px 8px 38px -10px rgba(189, 63, 61, 0.42);
+}
+.shoe{
+    position: absolute;
 
-  
+}
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.marca{
+    font-size: 1.5rem;
+    letter-spacing: 0.34em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    padding-left: 5px;
+    padding-bottom: 70px;
+}
+.title{
+    font-size: 6rem;
+    letter-spacing: 0.34em;
+    font-family: 'Inter', sans-serif;
+}
+.subtitle{
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    font-family: 'Inter', sans-serif;
+    color: #585858;
+    width: 27.5vw;
+    padding-left: 5px;
+    padding-bottom: 50px;
+}
+.button{
+    width: 382px;
+    height: 101px;
+    border-radius: 50px;
+    background-color: #0B0B0B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    letter-spacing: 0.34em;
+    transition: all .5s;
+}
+.button:hover{
+    background-color: #9C0610;
+}
+footer{
+    display: grid;
+    grid-template-columns: social nike bars;
+}
+.social{
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    font-size: 1.5rem;
+    list-style: none;
+    gap: 2vw;
+    padding-left: 4vw;
+}
+.nike{
+    grid-area: nike;
+}
+.bars{
+    display: grid;
+    grid-area: bars;
+    position: absolute;
+    right: 1vw;
+    bottom: 5vh;
+}
